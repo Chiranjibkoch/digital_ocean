@@ -12,7 +12,7 @@ from typing import *
 from pyrogram import Client
 from pyrogram import *
 from pyrogram.types import *
-from config import API_ID, API_HASH, BOT_TOKEN
+from config import API_ID, API_HASH, BOT_TOKEN, OPENAI_API
 import config 
 logging.basicConfig(level=logging.INFO)
 
@@ -24,6 +24,7 @@ app = Client(
     api_id=API_ID,
     api_hash=API_HASH,
     bot_token=BOT_TOKEN,
+    open_api=OPENAI_API
     plugins=plugins,
     workers=300,
 )
