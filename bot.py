@@ -24,7 +24,7 @@ app = Client(
     api_id=API_ID,
     api_hash=API_HASH,
     bot_token=BOT_TOKEN,
-    open_api=OPENAI_API
+    open_api=OPENAI_API, 
     plugins=plugins,
     workers=300,
 )
